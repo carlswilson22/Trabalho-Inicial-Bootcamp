@@ -1,0 +1,31 @@
+# Dependências
+node_modules/
+
+# Dados da aplicação (gerado em runtime)
+data.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.*.local
+
+# Cobertura de testes
+coverage/
+
+# Build (se aplicável)
+dist/
+build/
