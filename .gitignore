@@ -1,0 +1,60 @@
+# ==============================
+# Dependências e Pacotes
+# ==============================
+# Nunca versionar a pasta de dependências do Node (pode ser recriada via npm install)
+node_modules/
+jspm_packages/
+
+# ==============================
+# Logs e Depuração
+# ==============================
+# Logs locais gerados por falhas ou execuções
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ==============================
+# Ambiente e Chaves (Sensíveis)
+# ==============================
+# Variáveis de ambiente e segredos nunca devem ir para o repositório público
+.env
+.env.test
+.env.production
+.env.local
+.env.development
+
+# ==============================
+# Relatórios de Testes e Qualidade
+# ==============================
+# Relatórios de cobertura (ex: Jest/Istanbul) e cache do linter
+coverage/
+.nyc_output/
+.eslintcache
+
+# ==============================
+# Arquivos de Sistema Operacional
+# ==============================
+# Caches intrínsecos de visuais do sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ==============================
+# Configurações de IDEs Locais
+# ==============================
+# Settings específicos da máquina do desenvolvedor em seu editor de texto
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
