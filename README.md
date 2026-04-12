@@ -1,80 +1,64 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-</head>
-<body>
+# 💊 MedRemind - Lembrete de Medicamentos CLI
 
-    <h1>💊 MedLembrete</h1>
-    <p><strong>Cuidar de quem amamos começa pela organização e segurança na hora de tomar cada medicamento.</strong></p>
-    
-    <p>No meio da correria do dia a dia ou na complexidade de um tratamento de saúde, esquecer uma dose de remédio é um risco real que pode causar ansiedade e complicações médicas. O MedLembrete nasceu para ser um aliado simples e direto, transformando o terminal do seu computador em uma ferramenta de cuidado e precisão.</p>
+**Versão:** 1.0.0
 
-    <hr>
+## 🎯 Sobre o Projeto
 
-    <h2>🔍 O Problema Real</h2>
-    <p>O esquecimento ou a confusão com horários de medicamentos é um dos principais motivos de reinternações hospitalares e falhas em tratamentos crônicos. Para idosos que moram sozinhos, pessoas neurodivergentes ou cuidadores com rotinas exaustivas, manter o controle mental de todas as doses é uma carga cognitiva pesada e perigosa.</p>
+### O Problema (Dor Real)
+O esquecimento de doses ou a confusão com múltiplos horários de medicamentos é um risco real à saúde de idosos e pacientes crônicos, gerando ansiedade e sobrecarga mental para cuidadores e famílias.
 
-    <h2>💡 Proposta da Solução</h2>
-    <p>O MedLembrete oferece uma interface de linha de comando (CLI) intuitiva onde o usuário pode cadastrar seus medicamentos e horários em segundos. Sem distrações ou menus complexos, a solução foca no que importa: garantir que a informação sobre o próximo remédio esteja sempre disponível e organizada.</p>
+### A Solução
+O MedRemind é uma aplicação de linha de comando (CLI) focada em **simplicidade** e **segurança**, permitindo cadastrar, listar e remover lembretes de medicação com validações rigorosas para evitar erros de registro.
 
-    <h2>🎯 Público-Alvo</h2>
-    <ul>
-        <li><strong>Cuidadores:</strong> Que precisam gerenciar a rotina de terceiros.</li>
-        <li><strong>Pacientes Crônicos:</strong> Que possuem uma grade extensa de medicações diárias.</li>
-        <li><strong>Idosos com autonomia tecnológica:</strong> Que buscam uma ferramenta leve e sem propagandas.</li>
-    </ul>
+### Público-Alvo
+Idosos com autonomia tecnológica, pacientes em tratamento contínuo e cuidadores que buscam uma ferramenta leve, gratuita e livre de distrações visuais.
 
-    <h2>✨ Funcionalidades Principais</h2>
-    <ul>
-        <li><strong>Agendamento Seguro:</strong> Registro de nome, dosagem e horário (formato HH:mm).</li>
-        <li><strong>Visualização Clara:</strong> Listagem organizada de todos os lembretes ativos.</li>
-        <li><strong>Gestão de Lista:</strong> Remoção simples de medicamentos ao fim do tratamento.</li>
-        <li><strong>Validação Inteligente:</strong> O sistema impede entradas inválidas para evitar erros de registro.</li>
-    </ul>
+---
 
-    <h2>🛠 Tecnologias Utilizadas</h2>
-    <ul>
-        <li><strong>Linguagem:</strong> Node.js (JavaScript)</li>
-        <li><strong>Testes:</strong> Jest</li>
-        <li><strong>Qualidade de Código:</strong> ESLint</li>
-        <li><strong>Automação:</strong> GitHub Actions (CI)</li>
-    </ul>
+## 🛠️ Tecnologias Utilizadas
 
-    <hr>
+| Categoria | Tecnologia |
+|-----------|-----------|
+| **Linguagem** | JavaScript (Node.js) |
+| **Interface** | CLI (readline-sync / process.stdin) |
+| **Testes** | Jest |
+| **Qualidade de Código** | ESLint |
+| **CI/CD** | GitHub Actions |
 
-    <h2>🚀 Como Executar o Projeto</h2>
+---
 
-    <h3>1. Instruções de Instalação</h3>
-    <p>Certifique-se de ter o Node.js instalado em sua máquina.</p>
-    <pre><code># Clone o repositório
-git clone https://github.com/seu-usuario/medlembrete.git
+## ⚙️ Como Executar
 
-# Entre na pasta
-cd medlembrete
+### 1. Instalação
 
-# Instale as dependências
-npm install</code></pre>
+Certifique-se de ter o **Node.js** instalado. Clone o repositório e instale as dependências:
 
-    <h3>2. Instruções de Execução</h3>
-    <p>Para iniciar a aplicação e gerenciar seus lembretes:</p>
-    <pre><code>npm start</code></pre>
-    <p><em>(Ou use <code>node src/index.js</code>)</em></p>
+```bash
+git clone https://github.com/seu-usuario/medremind-cli.git
+cd medremind-cli
+npm install
+```
 
-    <h3>3. Instruções para Rodar os Testes</h3>
-    <pre><code>npm test</code></pre>
+### 2. Execução
 
-    <h3>4. Instruções para Rodar o Lint</h3>
-    <pre><code>npm run lint</code></pre>
+Para iniciar o sistema e acessar o menu interativo de cuidados:
 
-    <hr>
+```bash
+npm start
+```
 
-    <h2>📌 Informações Adicionais</h2>
-    <ul>
-        <li><strong>Versão Atual:</strong> 1.0.0 (Versionamento Semântico)</li>
-        <li><strong>Autor:</strong> [Seu Nome Aqui]</li>
-        <li><strong>Repositório Oficial:</strong> <a href="https://github.com/seu-usuario/medlembrete">https://github.com/seu-usuario/medlembrete</a></li>
-    </ul>
+### 3. Testes e Lint
 
-</body>
-</html>
+```bash
+# Executa os testes automatizados (validação de entradas, fluxos e erros)
+npm test
+
+# Executa a verificação estática de qualidade do código
+npm run lint
+```
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Carlos Wilson** para o desafio de desenvolvimento de software com impacto social.
