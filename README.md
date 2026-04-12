@@ -1,61 +1,68 @@
 # MedRemind CLI 💙
 
+"A saúde é construída nos pequenos hábitos diários, mas manter o controle de cada detalhe não deveria ser um fardo."
 
-[![GitHub Actions Status](https://github.com/SUA-ORGANIZACAO/SEU-REPOSITORIO/actions/workflows/ci.yml/badge.svg)](https://github.com/SUA-ORGANIZACAO/SEU-REPOSITORIO/actions)
+A rotina de cuidados com a saúde pode ser imensamente complexa. O esquecimento de uma simples dose pode gerar ansiedade e, a longo prazo, afetar significativamente a estabilidade e a qualidade de vida de qualquer pessoa.
 
-> *"A saúde é construída nos pequenos hábitos diários, mas manter o controle de cada detalhe não deveria ser um fardo."*
+O Problema: Para idosos, pacientes crônicos e cuidadores que dão o seu melhor todos os dias, gerenciar múltiplos horários, miligramas e nomenclaturas difíceis ao mesmo tempo é uma tarefa exaustiva. A constante incerteza — "Será que eu já dei esse remédio hoje?" — é uma dor real e silenciosa em muitos lares.
 
-A rotina de cuidados com a saúde pode ser imensamente complexa. O esquecimento de uma simples dose pode gerar ansiedade e, a longo prazo, afetar significativamente a estabilidade e a qualidade de vida de qualquer pessoa. 
+A Solução: O MedRemind foi desenhado para ser o seu braço direito tecnológico. Criado para funcionar de forma leve e acessível através de um terminal (interface CLI), ele simplifica o monitoramento retirando distrações visuais e entregando clareza e previsibilidade sobre o seu dia de cuidados.
 
-**O Problema:** Para idosos, pacientes crônicos e cuidadores que dão o seu melhor todos os dias, gerenciar múltiplos horários, miligramas e nomenclaturas difíceis de medicamentos ao mesmo tempo é uma tarefa exaustiva. A constante incerteza — *"Será que eu já dei esse remédio hoje?"* — é uma velha dor real e silenciosa em muitos lares.
+✨ Funcionalidades Principais
+Agendamento Seguro: Registro de nome, dosagem e horário (formato HH:mm).
 
-**A Solução:** O **MedRemind** foi pensado e desenhado para ser o seu braço direito tecnológico nessa jornada imprevisível. Criado para funcionar de forma leve e acessível através de um terminal, ele simplifica o monitoramento retirando distrações visuais e entregando a única coisa que realmente importa: clareza e previsibilidade essenciais sobre como será o seu dia de cuidados.
+Visualização Clara: Listagem organizada de todos os lembretes ativos em tempo real.
 
----
+Gestão de Lista: Remoção simples de medicamentos ao fim de cada tratamento.
 
-## 🌱 Preparando o Terreno
+Validação Inteligente: O sistema impede entradas inválidas para evitar erros cruciais de registro.
 
-Queremos que você comece a usar a interface sem burocracias ou dores de cabeça técnicas. 
+🌱 Preparando o Terreno
+Queremos que você comece a usar a interface sem burocracias técnicas. Certifique-se de ter o Node.js instalado e siga os passos:
 
-Primeiramente, para preparar a terra e garantir que todos os pacotes vitais do nosso sistema entrem no seu ambiente, basta invocar o comando de instalação no repositório:
+1. Instalação
+Para preparar a terra e garantir que todos os pacotes vitais do sistema entrem no seu ambiente:
 
-```bash
+Bash
+# Clone o repositório
+git clone https://github.com/SEU-USUARIO/medremind-repo.git
+
+# Entre na pasta e instale as dependências
+cd medremind-repo
 npm install
-```
+2. Como Começar (Execução)
+Para despertar a inteligência do sistema e abrir o menu interativo:
 
-## ☀️ Como Começar
+Bash
+npm start
+(Ou utilize o comando direto: node src/index.js)
 
-Com o MedRemind, você pode agendar uma nova medicação em segundos e ter uma visão clara de todo o seu dia. Chega de agendas rabiscadas!
+3. Garantindo a Segurança (Testes)
+Para rodar nossa bateria de testes automatizados e verificar a integridade do sistema:
 
-Para despertar a inteligência do sistema no seu computador e abrir a área interativa, digite:
+Bash
+npm test
+4. Padronização (Linting)
+Para executar a análise estática e garantir que o código segue as melhores práticas:
 
-```bash
-node index.js
-```
-*(Após o enter no seu teclado, nosso assistente abrirá um menu calmo e interativo feito por números amigáveis prontos para lhe guiar nas opções).*
+Bash
+npm run lint
+🛠 Tecnologias com Propósito
+As escolhas estruturais deste projeto visam viabilizar um cuidado seguro e resiliente:
 
----
+Fundações Ágeis: Escolhemos Node.js pela velocidade na execução via console, evitando esperas em páginas lentas.
 
-## 🛠 Tecnologias com Propósito
+Rigor da Informação: Utilizamos o framework Jest para testes unitários. Isso garante que o painel nunca calcule erroneamente ou repasse informações alteradas.
 
-Para esse projeto, acreditamos que ferramentas, linguagens e bibliotecas não sejam apenas trechos vazios de código; elas são escolhas estruturais indispensáveis para viabilizar um cuidado seguro.
+Qualidade Estática: Implementamos o ESLint para garantir que cada linha de código seja legível e padronizada.
 
-- **Fundações Ágeis**: Escolhemos **Node.js** pela velocidade imbatível na execução via console. Não queríamos que você perdesse seu tempo aguardando a ferramenta carregar em páginas superlotadas ou lentas.
-- **Rigor Médio da Informação**: Implementamos os ambientes rígidos de inspeção estática do **Jest**. Isso nos garante tecnicamente, e com 100% de solidez de testes nas bases isoladas, que o painel nunca calcule erroneamente ou repasse informações perigosas e alteradas para a saúde dos seus pacientes durante o seu ciclo rotineiro de gerenciamento.
-- **Compromisso Através de Versão**: Baseamos todo o código em métricas abertas e consolidadas de *Versionamento Semântico*. A versão `1.0.0` encontrada em nosso registro de pacotes não é apenas uma numeração técnica padrão; ela representa a nossa promessa absoluta de estabilidade contínua ao seu uso no presente de que o sistema agora entregue será íntegro e duradouro àquilo que se propõe ajudar na sua área de socorro e monitoramento.
+Compromisso de Estabilidade: Utilizamos Versionamento Semântico (v1.0.0). Esta numeração não é apenas técnica; é a nossa promessa de que o sistema entregue é íntegro e duradouro.
 
----
+Validação Contínua: Configuramos GitHub Actions para que cada alteração no código seja testada automaticamente antes de chegar ao usuário final.
 
-## 🤝 Venha Cuidar com a Gente
+📝 Identificação do Projeto
+Versão Atual: 1.0.0
 
-Acreditamos fortemente que a tecnologia possui seu aspecto mais poderoso quando é programada focado na cura, ou na remoção de fardos e dificuldades humanas.
+Autor: Carlos Wilson Dos Santos Gonçalves
 
-Se você é um desenvolvedor(a) e concorda com as bases desse projeto, fique em casa! Teremos imensa gratidão em observar sua contribuição ajudando desenvolvedores de fora e a nossa base a tornar essa interface terminal ainda mais acolhedora, resiliente, e quem sabe conectada mundialmente a novos avisos SMS a familiares do doente. Suas aberturas em *Issues* (ajustes) ou envios de *Pull Requests* para ramificação serão recebidas amplamente. O código solidário é feito a várias mãos!
-
----
-
-### *Nota do Autor*
-
-*Ao planejar e desenvolver esta aplicação lógica, minha maior motivação esteve bem distante de atuar somente sobre linhas secas de simulação algorítmica para um exercício estático. Este esforço arquitetural tem inspiração profunda para e ao fato de que, sob as bases dos simples projetos lógicos, podemos edificar plataformas capazes e maduras em arrancar da incerteza a sobrecarga mental de famílias e amparadores nas suas jornadas de preservação da vida e saúde nas residências mundiais.* 
-
-<p align="center">Feito com cuidado e dedicação à saúde social humana. ❤️</p>
+Repositório: [[LINK DO SEU GITHUB AQUI]](https://github.com/carlswilson22/Trabalho-Inicial-Bootcamp.git)
